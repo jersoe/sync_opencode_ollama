@@ -58,20 +58,3 @@ python3 sync_opencode_ollama.py --ollama-host http://192.168.1.50:11434
 
 ***
 
-## Shell Aliases Setup
-
-To make model management faster, we recommend setting up the following shell aliases in your shell's startup file (`~/.zshrc`, `~/.bashrc`, etc.). These wrappers wrap standard Ollama commands to provide immediate feedback and consistency.
-
-Add the following lines to your shell configuration file:
-
-```bash
-# Opencode Ollama Helpers
-alias ollamapull='ollama pull && echo "✅ Models pulled successfully."'
-alias ollamaremove='echo "🗑️ Ready to remove model? Please specify the model name (e.g., llava):"'
-```
-
-**How to Activate:**
-
-After adding these aliases, reload your shell configuration: 
-* For Zsh: `source ~/.zshrc`
-* For Bash: `source ~/.bashrc`
